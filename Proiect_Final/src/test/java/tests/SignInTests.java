@@ -10,7 +10,7 @@ public class SignInTests extends BaseTest{
     @DataProvider(name = "positiveLogin")
     public Object[][] dataProviderForPositiveLogin() {
         return new Object[][]{
-//             username | password | browserName
+    //  username | password | browserName
                 {"chrome"},{"firefox"}
         };
     }

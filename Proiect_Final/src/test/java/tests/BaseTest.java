@@ -1,12 +1,8 @@
 package tests;
 
-import org.checkerframework.checker.units.qual.C;
-import org.junit.runners.model.TestClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Sleeper;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import utils.BrowserUtils;
@@ -24,7 +20,6 @@ public class BaseTest {
 
     protected String url = "https://www.demoblaze.com/";
 
-    Sleeper sleeper = Sleeper.SYSTEM_SLEEPER;
     public void getBrowser(String browserName){
         driver = BrowserUtils.setUpBrowser(browserName);
     }

@@ -18,7 +18,7 @@ public class ValidateCategories extends LogInDemoBlaze{
         String text = driver.findElement(By.xpath("//a[text()='Samsung galaxy s6']")).getText();
         Assert.assertTrue("Samsung galaxy s6 phone not visible", text.contains("Samsung galaxy s6"));
         String text1 = driver.findElement(By.xpath("//a[text()='Nexus 6']")).getText();
-        Assert.assertTrue("Nokia lumia 1520'] phone not visible", text1.contains("Nexus 6"));
+        Assert.assertTrue("Nokia lumia 1520 phone not visible", text1.contains("Nexus 6"));
         String text2 = driver.findElement(By.xpath("//a[text()='Nokia lumia 1520']")).getText();
         Assert.assertTrue("Nokia lumia 1520 phone not visible", text2.contains("Nokia lumia 1520"));
         driver.findElement(By.xpath("//a[text()='Laptops']")).click();
